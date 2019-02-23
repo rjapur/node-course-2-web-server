@@ -65,6 +65,17 @@ app.get('/', (req, res) => {
   })
 });
 
+//register new routes /projects
+//create new template /include header, footer and welcomeMessage
+//add new link to projects pages
+
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page',
+    message: 'You are in the projects page'
+  })
+})
+
 app.get('/about', (req, res) => {
   // res.send('About Page');
   //render let render the any template you have with the current view engine
